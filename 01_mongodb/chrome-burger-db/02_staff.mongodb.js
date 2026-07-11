@@ -31,12 +31,3 @@ db.staff.insertMany([
 ]);
 
 db.staff.find();    
-db.orders.aggregate([{$lookup: 
-{
-    from: "orders",
-    localField: "orders_id", 
-foreignField: "_id"},
-as: "staff_info"
-},
-{$unwind: "$staff_info"},
-]);

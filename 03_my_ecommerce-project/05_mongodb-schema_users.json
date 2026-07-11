@@ -1,0 +1,18 @@
+JavaScript
+
+const mongoose = require('mongoose');
+
+// เชื่อมต่อ MongoDB
+mongoose.connect('mongodb://localhost:27017/my-ecommerce-db', 
+
+use ("my_ecommerce_db");
+
+// Clear existing data
+db.customer.deleteMany({});
+
+// Insert mock data for Customer collection
+db.customer.insertMany([
+    { name: "สมชาย รักการอ่าน", email: "somchai@email.com", phone: "081-123-4567" },
+    { name: "วิภาวดี วรรณกรรม", email: "wipa@email.com", phone: "089-987-6543" },
+    { name: "ธนา รักหนังสือเก่า", email: "thana@email.com", phone: "085-555-0199" }, 
+]);
