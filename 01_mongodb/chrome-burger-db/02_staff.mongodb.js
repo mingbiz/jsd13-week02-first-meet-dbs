@@ -30,4 +30,4 @@ db.staff.insertMany([
   }
 ]);
 
-db.staff.find();    
+db.staff.find({});    
